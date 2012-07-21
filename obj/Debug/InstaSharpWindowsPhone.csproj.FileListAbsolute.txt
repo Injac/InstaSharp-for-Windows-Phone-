@@ -1,0 +1,13 @@
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Newtonsoft.Json.dll
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Spring.Rest.dll
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Spring.Social.Core.dll
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Newtonsoft.Json.xml
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Spring.Rest.pdb
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Spring.Rest.xml
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Spring.Social.Core.pdb
+c:\users\injac\documents\visual studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\Spring.Social.Core.xml
+C:\Users\injac\Documents\Visual Studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\obj\Debug\InstaSharpWindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\injac\Documents\Visual Studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\InstaSharpWindowsPhone.dll
+C:\Users\injac\Documents\Visual Studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\Bin\Debug\InstaSharpWindowsPhone.pdb
+C:\Users\injac\Documents\Visual Studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\obj\Debug\InstaSharpWindowsPhone.dll
+C:\Users\injac\Documents\Visual Studio 2010\Projects\PhoneApp2\PhoneClassLibrary1\obj\Debug\InstaSharpWindowsPhone.pdb

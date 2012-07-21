@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4700F2FF-D59D-4BF7-980C-389231E7C3DB}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InstaSharpWindowsPhone</RootNamespace>
+    <AssemblyName>InstaSharpWindowsPhone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.7\lib\sl4-windowsphone71\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Rest">
+      <HintPath>..\packages\Spring.Rest.1.1.0\lib\sl4-wp71\Spring.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Social.Core">
+      <HintPath>..\packages\Spring.Social.Core.1.0.0\lib\sl4-wp71\Spring.Social.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\Auth.cs" />
+    <Compile Include="Auth\AuthInfo.cs" />
+    <Compile Include="Config\InstagramConfig.cs" />
+    <Compile Include="Endpoints\Comments\Authenticated.cs" />
+    <Compile Include="Endpoints\Comments\Unauthenticated.cs" />
+    <Compile Include="Endpoints\Geographies\Authenticated.cs" />
+    <Compile Include="Endpoints\Geographies\Unauthenticated.cs" />
+    <Compile Include="Endpoints\InstagramAPI.cs" />
+    <Compile Include="Endpoints\Likes\Authenticated.cs" />
+    <Compile Include="Endpoints\Likes\Unauthenticated.cs" />
+    <Compile Include="Endpoints\Locations\Authenticated.cs" />
+    <Compile Include="Endpoints\Locations\Unauthenticated.cs" />
+    <Compile Include="Endpoints\Media\Authenticated.cs" />
+    <Compile Include="Endpoints\Media\Unauthenticated.cs" />
+    <Compile Include="Endpoints\Relationships\Authenticated.cs" />
+    <Compile Include="Endpoints\Relationships\Unauthenticated.cs" />
+    <Compile Include="Endpoints\Tags\Authenticated.cs" />
+    <Compile Include="Endpoints\Tags\Unauthenticated.cs" />
+    <Compile Include="Endpoints\UserInfo.cs" />
+    <Compile Include="Endpoints\Users\Authenticated.cs" />
+    <Compile Include="Endpoints\Users\Unauthenticated.cs" />
+    <Compile Include="HttpClient.cs" />
+    <Compile Include="Mapper.cs" />
+    <Compile Include="Model\Comments.cs" />
+    <Compile Include="Model\Count.cs" />
+    <Compile Include="Model\Image.cs" />
+    <Compile Include="Model\JsonMapping.cs" />
+    <Compile Include="Model\Like.cs" />
+    <Compile Include="Model\Location.cs" />
+    <Compile Include="Model\Media.cs" />
+    <Compile Include="Model\Meta.cs" />
+    <Compile Include="Model\Pagination.cs" />
+    <Compile Include="Model\Relationship.cs" />
+    <Compile Include="Model\Responses\CommentResponse.cs" />
+    <Compile Include="Model\Responses\CommentsResponse.cs" />
+    <Compile Include="Model\Responses\IResponse.cs" />
+    <Compile Include="Model\Responses\LikesResponse.cs" />
+    <Compile Include="Model\Responses\LocationResponse.cs" />
+    <Compile Include="Model\Responses\LocationsResponse.cs" />
+    <Compile Include="Model\Responses\MediaResponse.cs" />
+    <Compile Include="Model\Responses\MediasResponse.cs" />
+    <Compile Include="Model\Responses\RelationshipResponse.cs" />
+    <Compile Include="Model\Responses\TagResponse.cs" />
+    <Compile Include="Model\Responses\TagsResponse.cs" />
+    <Compile Include="Model\Responses\UserResponse.cs" />
+    <Compile Include="Model\Responses\UsersResponse.cs" />
+    <Compile Include="Model\Tag.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Spring.Rest.txt" />
+    <Content Include="App_Readme\Spring.Social.Core.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
